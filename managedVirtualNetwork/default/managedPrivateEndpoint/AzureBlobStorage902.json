@@ -1,0 +1,7 @@
+{
+	"name": "AzureBlobStorage902",
+	"properties": {
+		"privateLinkResourceId": "/subscriptions/49c9890d-08d4-4c03-b119-bd8e5af7b960/resourceGroups/safeDev/providers/Microsoft.Storage/storageAccounts/safeblobdev",
+		"groupId": "blob"
+	}
+}
