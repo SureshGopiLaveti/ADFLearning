@@ -15,6 +15,9 @@
 			"type": "secureString",
 			"metadata": "Secure string for 'connectionString' of 'ls_azblob'"
 		},
+		"AzureBlobStorage1_properties_typeProperties_connectionString": {
+			"type": "string"
+		},
 		"AzureBlobStorage1_properties_connectVia_referenceName": {
 			"type": "string",
 			"defaultValue": "AzureManagedIRManaged"
@@ -22,6 +25,9 @@
 		"AzureBlobStorage1_properties_connectVia_type": {
 			"type": "string",
 			"defaultValue": "IntegrationRuntimeReference"
+		},
+		"ls_azblob_properties_typeProperties_connectionString": {
+			"type": "string"
 		},
 		"containerUri": {
 			"type": "string",
@@ -55,6 +61,12 @@
 					},
 					"AzureBlobStorage1_connectionString": {
 						"value": "[parameters('AzureBlobStorage1_connectionString')]"
+					},
+					"ls_azblob_properties_typeProperties_connectionString": {
+						"value": "[parameters('ls_azblob_properties_typeProperties_connectionString')]"
+					},
+					"AzureBlobStorage1_properties_typeProperties_connectionString": {
+						"value": "[parameters('AzureBlobStorage1_properties_typeProperties_connectionString')]"
 					},
 					"AzureBlobStorage1_properties_connectVia_referenceName": {
 						"value": "[parameters('AzureBlobStorage1_properties_connectVia_referenceName')]"

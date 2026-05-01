@@ -11,11 +11,17 @@
 		"ls_azblob_connectionString": {
 			"value": ""
 		},
+		"AzureBlobStorage1_properties_typeProperties_connectionString": {
+			"value": ""
+		},
 		"AzureBlobStorage1_properties_connectVia_referenceName": {
 			"value": "AzureManagedIRManaged"
 		},
 		"AzureBlobStorage1_properties_connectVia_type": {
 			"value": "IntegrationRuntimeReference"
+		},
+		"ls_azblob_properties_typeProperties_connectionString": {
+			"value": ""
 		},
 		"containerUri": {
 			"value": ""
