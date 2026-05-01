@@ -121,7 +121,7 @@
                     "mlWorkspaceName": "="
                 }
             },
-              "connectVia": {
+            "connectVia": {
                 "referenceName": "@linkedService().IRName",
                 "type": "IntegrationRuntimeReference"
             }
