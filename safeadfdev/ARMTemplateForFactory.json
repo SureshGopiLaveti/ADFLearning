@@ -22,14 +22,6 @@
 		"AzureBlobStorage1_properties_connectVia_type": {
 			"type": "string",
 			"defaultValue": "IntegrationRuntimeReference"
-		},
-		"AzureBlobStorage902_properties_privateLinkResourceId": {
-			"type": "string",
-			"defaultValue": "/subscriptions/49c9890d-08d4-4c03-b119-bd8e5af7b960/resourceGroups/safeDev/providers/Microsoft.Storage/storageAccounts/safeblobdev"
-		},
-		"AzureBlobStorage902_properties_groupId": {
-			"type": "string",
-			"defaultValue": "blob"
 		}
 	},
 	"variables": {
@@ -234,8 +226,8 @@
 			"type": "Microsoft.DataFactory/factories/managedVirtualNetworks/managedPrivateEndpoints",
 			"apiVersion": "2018-06-01",
 			"properties": {
-				"privateLinkResourceId": "[parameters('AzureBlobStorage902_properties_privateLinkResourceId')]",
-				"groupId": "[parameters('AzureBlobStorage902_properties_groupId')]"
+				"privateLinkResourceId": "/subscriptions/49c9890d-08d4-4c03-b119-bd8e5af7b960/resourceGroups/safeDev/providers/Microsoft.Storage/storageAccounts/safeblobdev",
+				"groupId": "blob"
 			},
 			"dependsOn": [
 				"[concat(variables('factoryId'), '/managedVirtualNetworks/default')]"

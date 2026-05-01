@@ -16,12 +16,6 @@
 		},
 		"AzureBlobStorage1_properties_connectVia_type": {
 			"value": "IntegrationRuntimeReference"
-		},
-		"AzureBlobStorage902_properties_privateLinkResourceId": {
-			"value": "/subscriptions/49c9890d-08d4-4c03-b119-bd8e5af7b960/resourceGroups/safeDev/providers/Microsoft.Storage/storageAccounts/safeblobdev"
-		},
-		"AzureBlobStorage902_properties_groupId": {
-			"value": "blob"
 		}
 	}
 }
