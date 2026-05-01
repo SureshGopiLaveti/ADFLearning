@@ -119,12 +119,13 @@
                     "connectionString": "|:-connectionString:secureString",
                     "hostKeyFingerprint": "=",
                     "mlWorkspaceName": "="
-                }
-            },
-            "connectVia": {
+                },
+                 "connectVia": {
                 "referenceName": "=",
                 "type": "="
             }
+            }
+           
         },
         "Odbc": {
             "properties": {
