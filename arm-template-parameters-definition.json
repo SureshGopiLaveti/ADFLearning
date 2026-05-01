@@ -120,12 +120,11 @@
                     "hostKeyFingerprint": "=",
                     "mlWorkspaceName": "="
                 },
-                 "connectVia": {
-                "referenceName": "=",
-                "type": "="
+                "connectVia": {
+                    "referenceName": "=",
+                    "type": "="
+                }
             }
-            }
-           
         },
         "Odbc": {
             "properties": {
@@ -155,13 +154,6 @@
                     "token": "="
                 }
             }
-        }
-    },
-    "Microsoft.DataFactory/factories/managedVirtualNetworks/managedPrivateEndpoints": {
-        "properties": {
-            "privateLinkResourceId": "=",
-            "groupId": "=",
-            "fqdns": "="
         }
     },
     "Microsoft.DataFactory/factories/globalparameters": {
