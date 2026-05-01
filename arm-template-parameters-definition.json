@@ -122,7 +122,7 @@
                 }
             },
             "connectVia": {
-                "referenceName": "@linkedService().IRName",
+                "referenceName": "*",
                 "type": "IntegrationRuntimeReference"
             }
         },
