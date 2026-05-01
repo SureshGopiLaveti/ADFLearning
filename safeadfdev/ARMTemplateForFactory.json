@@ -15,6 +15,14 @@
 			"type": "secureString",
 			"metadata": "Secure string for 'connectionString' of 'ls_azblob'"
 		},
+		"AzureBlobStorage1_properties_connectVia_referenceName": {
+			"type": "string",
+			"defaultValue": "AzureManagedIRManaged"
+		},
+		"AzureBlobStorage1_properties_connectVia_type": {
+			"type": "string",
+			"defaultValue": "IntegrationRuntimeReference"
+		},
 		"AzureBlobStorage902_properties_privateLinkResourceId": {
 			"type": "string",
 			"defaultValue": "/subscriptions/49c9890d-08d4-4c03-b119-bd8e5af7b960/resourceGroups/safeDev/providers/Microsoft.Storage/storageAccounts/safeblobdev"
@@ -161,12 +169,12 @@
 					"connectionString": "[parameters('AzureBlobStorage1_connectionString')]"
 				},
 				"connectVia": {
-					"referenceName": "AzureManagedIRManaged",
-					"type": "IntegrationRuntimeReference"
+					"referenceName": "[parameters('AzureBlobStorage1_properties_connectVia_referenceName')]",
+					"type": "[parameters('AzureBlobStorage1_properties_connectVia_type')]"
 				}
 			},
 			"dependsOn": [
-				"[concat(variables('factoryId'), '/integrationRuntimes/AzureManagedIRManaged')]"
+				"[concat(variables('factoryId'), '/integrationRuntimes/', parameters('AzureBlobStorage1_properties_connectVia_referenceName'))]"
 			]
 		},
 		{

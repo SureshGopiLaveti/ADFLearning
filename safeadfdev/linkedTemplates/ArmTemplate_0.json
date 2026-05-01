@@ -22,6 +22,14 @@
 		"AzureBlobStorage902_properties_groupId": {
 			"type": "string",
 			"defaultValue": "blob"
+		},
+		"AzureBlobStorage1_properties_connectVia_referenceName": {
+			"type": "string",
+			"defaultValue": "AzureManagedIRManaged"
+		},
+		"AzureBlobStorage1_properties_connectVia_type": {
+			"type": "string",
+			"defaultValue": "IntegrationRuntimeReference"
 		}
 	},
 	"variables": {
@@ -152,12 +160,12 @@
 					"connectionString": "[parameters('AzureBlobStorage1_connectionString')]"
 				},
 				"connectVia": {
-					"referenceName": "AzureManagedIRManaged",
-					"type": "IntegrationRuntimeReference"
+					"referenceName": "[parameters('AzureBlobStorage1_properties_connectVia_referenceName')]",
+					"type": "[parameters('AzureBlobStorage1_properties_connectVia_type')]"
 				}
 			},
 			"dependsOn": [
-				"[concat(variables('factoryId'), '/integrationRuntimes/AzureManagedIRManaged')]"
+				"[concat(variables('factoryId'), '/integrationRuntimes/', parameters('AzureBlobStorage1_properties_connectVia_referenceName'))]"
 			]
 		},
 		{

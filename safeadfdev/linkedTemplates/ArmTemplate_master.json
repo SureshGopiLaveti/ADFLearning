@@ -15,6 +15,14 @@
 			"type": "secureString",
 			"metadata": "Secure string for 'connectionString' of 'ls_azblob'"
 		},
+		"AzureBlobStorage1_properties_connectVia_referenceName": {
+			"type": "string",
+			"defaultValue": "AzureManagedIRManaged"
+		},
+		"AzureBlobStorage1_properties_connectVia_type": {
+			"type": "string",
+			"defaultValue": "IntegrationRuntimeReference"
+		},
 		"AzureBlobStorage902_properties_privateLinkResourceId": {
 			"type": "string",
 			"defaultValue": "/subscriptions/49c9890d-08d4-4c03-b119-bd8e5af7b960/resourceGroups/safeDev/providers/Microsoft.Storage/storageAccounts/safeblobdev"
@@ -61,6 +69,12 @@
 					},
 					"AzureBlobStorage902_properties_groupId": {
 						"value": "[parameters('AzureBlobStorage902_properties_groupId')]"
+					},
+					"AzureBlobStorage1_properties_connectVia_referenceName": {
+						"value": "[parameters('AzureBlobStorage1_properties_connectVia_referenceName')]"
+					},
+					"AzureBlobStorage1_properties_connectVia_type": {
+						"value": "[parameters('AzureBlobStorage1_properties_connectVia_type')]"
 					}
 				}
 			},
