@@ -116,7 +116,7 @@
                     "aadResourceId": "=",
                     "sasUri": "|:-sasUri:secureString",
                     "sasToken": "|",
-                    "connectionString": "|:-connectionString:secureString",
+                    "connectionString": "=",
                     "hostKeyFingerprint": "=",
                     "mlWorkspaceName": "="
                 },
