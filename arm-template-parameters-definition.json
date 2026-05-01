@@ -122,8 +122,8 @@
                 }
             },
             "connectVia": {
-                "referenceName": "*",
-                "type": "*"
+                "referenceName": "=",
+                "type": "="
             }
         },
         "Odbc": {
